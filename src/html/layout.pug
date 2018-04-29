@@ -4,16 +4,16 @@ html(lang="zh-CN")
     meta(charset="UTF-8")
     title 📒  PhotoShop 封魔修仙录
     link(rel="stylesheet", type="text/css", href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css")
-    link(rel="stylesheet", type="text/css", href="http://miyogurt.github.io/ps-xiuxian/css/main.css")
+    link(rel="stylesheet", type="text/css", href="./css/main.css")
     link(href="https://cdn.bootcss.com/plyr/3.2.1/plyr.css" rel="stylesheet")
     link(href="https://cdn.bootcss.com/plyr/3.2.1/plyr.svg" rel="preload"  as="font" type="image/svg+xml" crossorigin="anonymous")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
-    <base href="http://miyogurt.github.io/ps-xiuxian" />
+    <base href="." />
   body
     nav.sticky
       section
         section.left
-          a(href="http://miyogurt.github.io/ps-xiuxian") 📒  PhotoShop 封魔修仙录
+          a(href="/") 📒  PhotoShop 封魔修仙录
         section.center
           block center-title
         section.right
@@ -22,12 +22,12 @@ html(lang="zh-CN")
       menu.ui
         ul.no-style
           block menu
-            li: a(href="http://miyogurt.github.io/ps-xiuxian/", title="Home") 🚩 首页
-            li: a(href="http://miyogurt.github.io/ps-xiuxian/day1.html", title="Home") 💎 第一天: 通道抠图
+            li: a(href="/", title="Home") 🚩 首页
+            li: a(href="./day1.html", title="Home") 💎 第一天: 通道抠图
       section
           block content
     script(src="https://cdn.bootcss.com/plyr/3.2.1/plyr.polyfilled.min.js")
     script(src="https://cdn.bootcss.com/plyr/3.2.1/plyr.min.js")
-    script(type="text/javascript", src="http://miyogurt.github.io/ps-xiuxian/js/nav.js")
-    script(type="text/javascript", src="http://miyogurt.github.io/ps-xiuxian/js/sticky.js")
-    script(type="text/javascript", src="http://miyogurt.github.io/ps-xiuxian/js/index.js")
+    script(type="text/javascript", src="./js/nav.js")
+    script(type="text/javascript", src="./js/sticky.js")
+    script(type="text/javascript", src="./js/index.js")
