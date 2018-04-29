@@ -1,0 +1,92 @@
+@import 'vars'
+@import 'media'
+
+*
+  font-family: $font-family
+  font-size: 15px
+  line-height: $line-height
+  
+
+@for $i from 1 through 6
+  h#{$i}
+    $size: (2rem -$i * .2rem)
+    font-size: $size
+    font-weight: normal
+    line-height: 1.2
+    margin: 0
+    color: darken($deep-blue-black, 10%)
+    *
+      font-size: $size
+    @if $i > 4
+      font-weight: 900
+    & ~ small
+      $sub-title-size: ($size * 0.5)
+      @if $sub-title-size < .5rem
+        $sub-title-size: .5rem
+      font-size: $sub-title-size
+      display: inline-block
+      color: lighten($deep-blue-black, 20%)
+    &::before
+      content: '#'
+      font-size: $size
+      line-height: inherit
+      padding-right: .5rem
+
+section,
+article
+  padding: 1rem 2rem
+  line-height: $line-height
+  +touch
+    padding: 1rem
+    body > &
+      padding: 1rem .5rem
+    
+img
+  max-width: 100%
+  box-shadow: 0 0.5rem 2rem 0 rgba(0,0,0,0.2)
+
+figure
+  text-align: center
+  margin: 1rem 0
+  figcaption
+    text-align: center
+    border-bottom: 2px solid lighten($normal-color, 10%)
+    display: inline-block
+    min-width: 8rem
+    margin: 1rem 0
+    padding-bottom: .5rem
+
+pre,
+code
+  font-family: Fira Code
+  background: $little-background
+  border-radius: 0.2rem
+  padding: .5rem 1rem
+  font-size: .9rem
+  &.colored
+    color: $deep-blue-black
+    border: 3px dashed $deep-blue-black
+
+#toctitle
+  display: none
+
+#toc
+  background: #f8f8f8
+  padding: .5rem 2rem
+  width: max-content
+  li
+    line-height: 2
+    &::before
+      content: ''
+    a
+      text-decoration: none
+
+blockquote
+  margin: 0px
+
+.paragraph p
+  margin-top: 0
+
+
+hr
+  border: 2px solid #f7f7f7

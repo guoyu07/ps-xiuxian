@@ -1,0 +1,74 @@
+@import 'vars'
+@import 'media'
+
+nav
+  z-index: 10
+  display: flex
+  width: 100%
+  height: 3.5rem
+  line-height: 3.5rem
+  background: $little-background
+  &.sticky
+    position: sticky
+    top: 0
+  & > section
+    width: 100%
+  section
+    display: flex
+    align-items: center
+    cursor: pointer
+    &.center
+      position: absolute
+      left: 0
+      right: 0
+      justify-content: center
+      height: 100%
+      +touch()
+        justify-content: flex-start
+    &.left,
+    &.right
+      padding: 0
+      z-index: 2
+      button
+        display: inline-block
+        margin-left: .5rem
+      a
+        display: inline-block
+        text-decoration: none
+        width: max-content
+        margin-right: 1rem
+        &:last-of-type
+          margin-right: 0
+        color: $deep-blue-black
+        &:hover
+          color: $normal-color
+    &.left
+      margin-right: auto
+      +touch
+        display: none
+    &.right
+      margin-left: auto
+
++touch()
+  nav
+    section.left
+      border-bottom: 1px solid darken($little-background, 5%)
+
+    section
+      padding: 0 1rem
+    section.right
+      padding-right: 0
+  nav.is-active
+    section.left
+      background: $little-background
+      display: block
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      padding: 0 1rem 1rem
+      a
+        display: block
+        height: 2rem
+        line-height: 2rem
+        width: 100%
