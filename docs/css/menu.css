@@ -1,0 +1,39 @@
+menu {
+  padding: 1rem;
+  margin: 0;
+  display: inline-block;
+  background: #f7f7f7;
+  width: 20%;
+  position: sticky;
+  top: 62px;
+  height: min-content;
+  transition: all .2s; }
+  @media screen and (max-width: 958px) {
+    menu {
+      position: static;
+      display: block;
+      width: 100%; } }
+  menu li {
+    margin: 1rem 0; }
+
+nav ~ section.page {
+  padding-top: 15px;
+  overflow: visible;
+  display: flex; }
+  @media screen and (max-width: 958px) {
+    nav ~ section.page {
+      display: block; } }
+  nav ~ section.page > section {
+    background: #f7f7f7;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0;
+    width: 77%; }
+    nav ~ section.page > section div {
+      margin: 0; }
+    @media screen and (max-width: 958px) {
+      nav ~ section.page > section {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 1rem 0; } }

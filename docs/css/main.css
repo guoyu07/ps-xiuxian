@@ -5,8 +5,12 @@
   font-size: 15px;
   box-sizing: border-box; }
 
+body {
+  min-height: 101vh; }
+
 .ui a {
   text-decoration: none; }
+
 .ui h1 {
   font-size: 1.8rem;
   font-weight: normal;
@@ -18,15 +22,17 @@
     display: inline-block;
     color: #5f8bba; }
   article .ui h1::before {
-    content: "#";
+    content: '#';
     font-size: 1.8rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
   article.no-heading .ui h1::before {
-    content: "";
+    content: '';
     padding-right: 0; }
-  .ui h1 ~ p, .ui h1 ~ small ~ p {
-    margin: 0.5rem 0 1rem; }
+  .ui h1 ~ p,
+  .ui h1 ~ small ~ p {
+    margin: .5rem 0 1rem; }
+
 .ui h2 {
   font-size: 1.6rem;
   font-weight: normal;
@@ -38,15 +44,17 @@
     display: inline-block;
     color: #5f8bba; }
   article .ui h2::before {
-    content: "#";
+    content: '#';
     font-size: 1.6rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
   article.no-heading .ui h2::before {
-    content: "";
+    content: '';
     padding-right: 0; }
-  .ui h2 ~ p, .ui h2 ~ small ~ p {
-    margin: 0.5rem 0 1rem; }
+  .ui h2 ~ p,
+  .ui h2 ~ small ~ p {
+    margin: .5rem 0 1rem; }
+
 .ui h3 {
   font-size: 1.4rem;
   font-weight: normal;
@@ -58,15 +66,17 @@
     display: inline-block;
     color: #5f8bba; }
   article .ui h3::before {
-    content: "#";
+    content: '#';
     font-size: 1.4rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
   article.no-heading .ui h3::before {
-    content: "";
+    content: '';
     padding-right: 0; }
-  .ui h3 ~ p, .ui h3 ~ small ~ p {
-    margin: 0.5rem 0 1rem; }
+  .ui h3 ~ p,
+  .ui h3 ~ small ~ p {
+    margin: .5rem 0 1rem; }
+
 .ui h4 {
   font-size: 1.2rem;
   font-weight: normal;
@@ -78,15 +88,17 @@
     display: inline-block;
     color: #5f8bba; }
   article .ui h4::before {
-    content: "#";
+    content: '#';
     font-size: 1.2rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
   article.no-heading .ui h4::before {
-    content: "";
+    content: '';
     padding-right: 0; }
-  .ui h4 ~ p, .ui h4 ~ small ~ p {
-    margin: 0.5rem 0 1rem; }
+  .ui h4 ~ p,
+  .ui h4 ~ small ~ p {
+    margin: .5rem 0 1rem; }
+
 .ui h5 {
   font-size: 1rem;
   font-weight: normal;
@@ -99,15 +111,17 @@
     display: inline-block;
     color: #5f8bba; }
   article .ui h5::before {
-    content: "#";
+    content: '#';
     font-size: 1rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
   article.no-heading .ui h5::before {
-    content: "";
+    content: '';
     padding-right: 0; }
-  .ui h5 ~ p, .ui h5 ~ small ~ p {
-    margin: 0.5rem 0 1rem; }
+  .ui h5 ~ p,
+  .ui h5 ~ small ~ p {
+    margin: .5rem 0 1rem; }
+
 .ui h6 {
   font-size: 0.8rem;
   font-weight: normal;
@@ -120,15 +134,17 @@
     display: inline-block;
     color: #5f8bba; }
   article .ui h6::before {
-    content: "#";
+    content: '#';
     font-size: 0.8rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
   article.no-heading .ui h6::before {
-    content: "";
+    content: '';
     padding-right: 0; }
-  .ui h6 ~ p, .ui h6 ~ small ~ p {
-    margin: 0.5rem 0 1rem; }
+  .ui h6 ~ p,
+  .ui h6 ~ small ~ p {
+    margin: .5rem 0 1rem; }
+
 .ui section,
 .ui article {
   padding: 1rem 2rem; }
@@ -136,9 +152,11 @@
     .ui section,
     .ui article {
       padding: 1rem 0.5rem; } }
+
 .ui img {
   max-width: 100%;
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); }
+
 .ui figure {
   text-align: center;
   margin: 1rem 0; }
@@ -148,58 +166,64 @@
     display: inline-block;
     min-width: 8rem;
     margin: 1rem 0;
-    padding-bottom: 0.5rem; }
+    padding-bottom: .5rem; }
+
 .ui ul,
 .ui ol {
   list-style-type: none;
   padding: 0; }
+
 .ui ul:not(.no-style) li::before {
-  content: "□";
+  content: '□';
   font-size: 1.5rem;
   width: 1rem;
   line-height: 1.2rem;
-  padding-right: 0.5rem; }
+  padding-right: .5rem; }
+
 .ui ol:not(.no-style) li {
   counter-increment: list-number 1; }
   .ui ol:not(.no-style) li::before {
     content: counter(list-number);
-    font-size: 0.8rem;
+    font-size: .8rem;
     width: 1.5rem;
     text-align: center;
     border-radius: 50%;
     background: #2b2b2b;
     color: #fff;
     display: inline-block;
-    margin-right: 0.5rem;
+    margin-right: .5rem;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.2); }
+
 .ui pre,
 .ui code {
   font-family: Fira Code;
   background: #f7f7f7;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   border-radius: 0.2rem;
-  font-size: 0.9rem; }
+  font-size: .9rem; }
   .ui pre.colored,
   .ui code.colored {
     color: #36587d;
     border: 3px dashed #36587d; }
+
 .ui p {
   line-height: inherit; }
+
 .ui button,
 .ui a.button {
-  padding: 0.4rem 1rem;
+  padding: .4rem 1rem;
   border: none;
   background: #ababab;
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: normal;
   color: white;
   border-bottom: 4px solid #5e5e5e;
   outline: none;
-  transition: all 0.2s;
+  transition: all .2s;
   cursor: pointer;
-  border-radius: 0.2rem;
+  border-radius: .2rem;
   display: inline-block;
-  margin: 0.2rem 0;
+  margin: .2rem 0;
   line-height: 1.2; }
   .ui button:hover,
   .ui a.button:hover {
@@ -216,6 +240,7 @@
   .ui a.button.transparent:hover {
     color: white;
     background: #2b2b2b; }
+
 .ui .button-group {
   display: block;
   font-size: 0; }
@@ -225,12 +250,13 @@
     position: relative;
     border-right: 1px solid #5e5e5e; }
     .ui .button-group button:first-of-type {
-      border-top-left-radius: 0.2rem;
-      border-bottom-left-radius: 0.2rem; }
+      border-top-left-radius: .2rem;
+      border-bottom-left-radius: .2rem; }
     .ui .button-group button:last-of-type {
-      border-top-right-radius: 0.2rem;
-      border-bottom-right-radius: 0.2rem;
+      border-top-right-radius: .2rem;
+      border-bottom-right-radius: .2rem;
       border-right: 0; }
+
 .ui section.box {
   background: #f9fbfd;
   border: 1px solid #ececec;
@@ -266,7 +292,7 @@ nav {
       z-index: 2; }
       nav section.left button, nav section.right button {
         display: inline-block;
-        margin-left: 0.5rem; }
+        margin-left: .5rem; }
       nav section.left a, nav section.right a {
         display: inline-block;
         text-decoration: none;
@@ -292,7 +318,6 @@ nav {
     padding: 0 1rem; }
   nav section.right {
     padding-right: 0; }
-
   nav.is-active section.left {
     background: #f7f7f7;
     display: block;
@@ -306,6 +331,7 @@ nav {
       height: 2rem;
       line-height: 2rem;
       width: 100%; } }
+
 menu {
   padding: 1rem;
   margin: 0;
@@ -315,7 +341,7 @@ menu {
   position: sticky;
   top: 62px;
   height: min-content;
-  transition: all 0.2s; }
+  transition: all .2s; }
   @media screen and (max-width: 958px) {
     menu {
       position: static;
@@ -333,8 +359,12 @@ nav ~ section.page {
       display: block; } }
   nav ~ section.page > section {
     background: #f7f7f7;
-    width: 78%;
-    margin-left: 1%; }
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0;
+    width: 77%; }
+    nav ~ section.page > section div {
+      margin: 0; }
     @media screen and (max-width: 958px) {
       nav ~ section.page > section {
         position: static;
@@ -360,10 +390,10 @@ h1 {
     display: inline-block;
     color: #5f8bba; }
   h1::before {
-    content: "#";
+    content: '#';
     font-size: 1.8rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
 
 h2 {
   font-size: 1.6rem;
@@ -378,10 +408,10 @@ h2 {
     display: inline-block;
     color: #5f8bba; }
   h2::before {
-    content: "#";
+    content: '#';
     font-size: 1.6rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
 
 h3 {
   font-size: 1.4rem;
@@ -396,10 +426,10 @@ h3 {
     display: inline-block;
     color: #5f8bba; }
   h3::before {
-    content: "#";
+    content: '#';
     font-size: 1.4rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
 
 h4 {
   font-size: 1.2rem;
@@ -414,10 +444,10 @@ h4 {
     display: inline-block;
     color: #5f8bba; }
   h4::before {
-    content: "#";
+    content: '#';
     font-size: 1.2rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
 
 h5 {
   font-size: 1rem;
@@ -433,10 +463,10 @@ h5 {
     display: inline-block;
     color: #5f8bba; }
   h5::before {
-    content: "#";
+    content: '#';
     font-size: 1rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
 
 h6 {
   font-size: 0.8rem;
@@ -452,10 +482,10 @@ h6 {
     display: inline-block;
     color: #5f8bba; }
   h6::before {
-    content: "#";
+    content: '#';
     font-size: 0.8rem;
     line-height: inherit;
-    padding-right: 0.5rem; }
+    padding-right: .5rem; }
 
 section,
 article {
@@ -467,7 +497,7 @@ article {
       padding: 1rem; }
       body > section, body >
       article {
-        padding: 1rem 0.5rem; } }
+        padding: 1rem .5rem; } }
 
 img {
   max-width: 100%;
@@ -482,15 +512,15 @@ figure {
     display: inline-block;
     min-width: 8rem;
     margin: 1rem 0;
-    padding-bottom: 0.5rem; }
+    padding-bottom: .5rem; }
 
 pre,
 code {
   font-family: Fira Code;
   background: #f7f7f7;
   border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem; }
+  padding: .5rem 1rem;
+  font-size: .9rem; }
   pre.colored,
   code.colored {
     color: #36587d;
@@ -501,12 +531,12 @@ code {
 
 #toc {
   background: #f8f8f8;
-  padding: 0.5rem 2rem;
+  padding: .5rem 2rem;
   width: max-content; }
   #toc li {
     line-height: 2; }
     #toc li::before {
-      content: ""; }
+      content: ''; }
     #toc li a {
       text-decoration: none; }
 
@@ -531,8 +561,10 @@ video {
 .flex {
   display: flex; }
   .flex .item {
-    width: 32%;
+    width: 48%;
     display: block;
-    margin-right: 1%; }
-
-/*# sourceMappingURL=main.css.map */
+    margin: 2% 4% 2% 2%; }
+    .flex .item:last-of-type {
+      margin-right: 2%; }
+    .flex .item h4 {
+      margin-top: 5%; }
