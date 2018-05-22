@@ -10,7 +10,10 @@
         "dev": "node dev.js",
         "parcel": "parcel index.html"
     },
-    "keywords": ["leaning", "photoshop"],
+    "keywords": [
+        "leaning",
+        "photoshop"
+    ],
     "author": "ChenMingMing<1733996866@qq.com>",
     "license": "MIT",
     "devDependencies": {

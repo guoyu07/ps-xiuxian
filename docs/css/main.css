@@ -559,11 +559,13 @@ video {
   object-fit: cover; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
   .flex .item {
-    width: 48%;
+    width: 45%;
     display: block;
-    margin: 2% 4% 2% 2%; }
+    margin: 2% 2% 2% 2%; }
     .flex .item:last-of-type {
       margin-right: 2%; }
     .flex .item h4 {
